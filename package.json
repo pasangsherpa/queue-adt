@@ -1,6 +1,6 @@
 {
     "name": "queue-adt",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Queue ADT for browser and nodejs",
     "main": "dist/queue-adt.js",
     "scripts": {
@@ -34,6 +34,7 @@
         "grunt-contrib-jshint": "^0.10.0",
         "grunt-contrib-uglify": "^0.4.0",
         "load-grunt-tasks": "^0.4.0",
-        "mocha": "*"
+        "mocha": "*",
+        "grunt-bump-build-git": "git://github.com/pasangsherpa/grunt-bump-build-git.git#master"
     }
 }
