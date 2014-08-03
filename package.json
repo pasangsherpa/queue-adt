@@ -30,11 +30,11 @@
     "homepage": "https://github.com/pasangsherpa/queue-adt",
     "devDependencies": {
         "grunt": "^0.4.1",
+        "grunt-bump-build-git": "git://github.com/pasangsherpa/grunt-bump-build-git.git#master",
         "grunt-contrib-concat": "^0.4.0",
         "grunt-contrib-jshint": "^0.10.0",
         "grunt-contrib-uglify": "^0.4.0",
         "load-grunt-tasks": "^0.4.0",
-        "mocha": "*",
-        "grunt-bump-build-git": "git://github.com/pasangsherpa/grunt-bump-build-git.git#master"
+        "mocha": "*"
     }
 }

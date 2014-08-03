@@ -1,6 +1,67 @@
 (function() {
     'use strict';
-    var Queue = {};
+    var Queue = function(initialCapacity) {
+        var _initialCapacity = initialCapacity || Infinity;
+        var _elements = [];
+
+        function enqueue(element) {
+            if (size() === _initialCapacity) {
+                throw new Error('enqueue(): Queue is full.');
+            }
+            return _elements.push(element);
+        }
+
+        function dequeue() {
+            if (isEmpty()) {
+                throw new Error('dequeue(): Queue is empty.');
+            }
+            return _elements.shift();
+        }
+
+        function first() {
+            if (isEmpty()) {
+                throw new Error('first(): Queue is empty.');
+            }
+            return _elements[0];
+        }
+
+        function isEmpty() {
+            return size() === 0;
+        }
+
+        function size() {
+            return _elements.length;
+        }
+
+        function Iterator() {
+            var counter = 0;
+
+            function hasNext() {
+                return _elements.length - counter > 0;
+            }
+
+            function next() {
+                if (!hasNext()) {
+                    throw new Error('next(): No such element.');
+                }
+                counter++;
+                return _elements[counter];
+            }
+            return {
+                hasNext: hasNext,
+                next: next
+            };
+        }
+
+        return {
+            enqueue: enqueue,
+            dequeue: dequeue,
+            first: first,
+            isEmpty: isEmpty,
+            size: size,
+            iterator: new Iterator()
+        };
+    };
 
     if (typeof define === 'function' && define.amd) {
         define(function() {
