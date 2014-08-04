@@ -1,6 +1,6 @@
 {
     "name": "queue-adt",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Queue ADT for browser and nodejs",
     "main": "dist/queue-adt.js",
     "scripts": {
