@@ -1,6 +1,6 @@
 /*!
 * queue-adt
-* v0.1.0 - 2014-08-03
+* v0.1.1 - 2014-08-03
 * https://github.com/pasangsherpa/queue-adt
 * (c) Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)
 * MIT License
