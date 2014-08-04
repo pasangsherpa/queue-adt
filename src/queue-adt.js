@@ -33,19 +33,25 @@
             return _elements.length;
         }
 
+        function empty() {
+            while (_elements.length) {
+                _elements.pop();
+            }
+            return _elements.length;
+        }
+
         function Iterator() {
             var counter = 0;
 
             function hasNext() {
-                return _elements.length - counter > 0;
+                return _elements.length !== counter;
             }
 
             function next() {
                 if (!hasNext()) {
                     throw new Error('next(): No such element.');
                 }
-                counter++;
-                return _elements[counter];
+                return _elements[counter++];
             }
             return {
                 hasNext: hasNext,
@@ -59,6 +65,7 @@
             first: first,
             isEmpty: isEmpty,
             size: size,
+            empty: empty,
             iterator: new Iterator()
         };
     };
