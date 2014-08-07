@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             banner: '/*!\n' +
                 '* <%= pkg.name %>\n' +
                 '* v<%= pkg.version %> - ' +
-                '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
+                '<%= grunt.template.today("mm-dd-yyyy") %>\n' +
                 '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
                 '* (c) <%= pkg.author %>\n' +
                 '* <%= pkg.license %> License\n' +
