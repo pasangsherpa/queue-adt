@@ -1,29 +1,29 @@
 {
-    "name": "queue-adt",
-    "version": "0.1.2",
-    "homepage": "https://github.com/pasangsherpa/queue-adt",
-    "authors": [
-        "Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)"
-    ],
-    "description": "Queue ADT for browser and nodejs",
-    "main": "dist/queue-adt.js",
-    "moduleType": [
-        "amd",
-        "globals",
-        "node"
-    ],
-    "keywords": [
-        "queue",
-        "adt",
-        "datatype",
-        "abstractdatatype"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ]
+  "name": "queue-adt",
+  "version": "0.1.2",
+  "homepage": "https://github.com/pasangsherpa/queue-adt",
+  "authors": [
+    "Pasang Sherpa <pgyalzen@gmail.com> (https://github.com/pasangsherpa)"
+  ],
+  "description": "Queue ADT for browser and nodejs",
+  "main": "dist/queue-adt.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "queue",
+    "adt",
+    "datatype",
+    "abstractdatatype"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
